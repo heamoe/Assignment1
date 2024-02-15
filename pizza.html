@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <style>
+        body {
+            background-color: #ff9966;
+            color: #ccff66;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to Pizza Man</h1>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Pizza order form -->
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- Additional input box -->
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Pizza Order</legend>
+                <label for="numberOfPizzas">Number of Pizzas:</label>
+                <input type="number" id="numberOfPizzas" name="numberOfPizzas" min="1" required><br><br>
+                
+                <label for="size">Size:</label>
+                <select id="size" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br><br>
+                
+                <label for="shape">Shape:</label><br>
+                <input type="radio" id="round" name="shape" value="round" checked>
+                <label for="round">Round</label><br>
+                <input type="radio" id="square" name="shape" value="square">
+                <label for="square">Square</label><br><br>
+                
+                <label for="toppings">Toppings:</label><br>
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label><br>
+                <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label><br>
+                <input type="checkbox" id="onions" name="toppings" value="onions">
+                <label for="onions">Onions</label><br><br>
+                
+                <label for="crust">Crust Type:</label><br>
+                <input type="radio" id="deepDish" name="crust" value="deepDish" checked>
+                <label for="deepDish">Deep Dish</label><br>
+                <input type="radio" id="thinCrust" name="crust" value="thinCrust">
+                <label for="thinCrust">Thin Crust</label><br><br>
+                
+                <label for="delivery">Delivery Option:</label><br>
+                <input type="radio" id="takeout" name="delivery" value="takeout" checked>
+                <label for="takeout">Take Out</label><br>
+                <input type="radio" id="delivery" name="delivery" value="delivery">
+                <label for="delivery">Delivery</label><br>
+                <input type="radio" id="eatIn" name="delivery" value="eatIn">
+                <label for="eatIn">Eat In</label><br><br>
+                
+                <label for="additionalInfo">Additional Information:</label><br>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+            </fieldset>
+            
+            <input type="submit" value="Place Order">
+            <input type="reset" value="Reset Form">
+        </form>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>© 2024 Pizza Paradise. All rights reserved.</p>
+    </footer>
+
+    <!-- Image illustration -->
+    <img src="pizza.jpg" alt="Delicious pizza" width="300">
+</body>
+</html>
